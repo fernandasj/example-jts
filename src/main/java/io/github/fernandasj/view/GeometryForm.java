@@ -334,7 +334,7 @@ public class GeometryForm extends javax.swing.JFrame {
                 Geometry geometryA = reader.read(inputGeometryA);
                 Geometry geometryB = reader.read(inputGeometryB);
 
-                equalsTextField.setText("" + geometryA.contains(geometryB));
+                equalsTextField.setText("" + geometryA.equals(geometryB));
                 disjointTextField.setText("" + geometryA.disjoint(geometryB));
                 intersectsTextField.setText("" + geometryA.intersects(geometryB));
                 touchesTextField.setText("" + geometryA.touches(geometryB));
